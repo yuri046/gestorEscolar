@@ -1,6 +1,6 @@
 spring:
   application:
-    name: gestorEscolar
+    name: schoolManagement
 
   profiles:
     active:${SPRING_PROFILES_ACTIVE:dev}
