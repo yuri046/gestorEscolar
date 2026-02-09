@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: gestorEscolar
+
+  profiles:
+    active:${SPRING_PROFILES_ACTIVE:dev}
+
+  datasource:
+    url: JDBC:postgresql://${DB_HOST}:${DB_PORT}/${DB_NAME}?ssl=require
+    username: ${DB_USER}
+    password: ${DB_PASSWORD}
+
+  jpa:
+    hibernate:
+      ddl-auto: update

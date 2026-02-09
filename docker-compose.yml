@@ -1,0 +1,14 @@
+
+services:
+  app:
+    build: .
+    container_name: gestor-escolar-app
+    ports:
+      - "8080:8080"
+    env_file:
+      - .env
+    depends_on:
+      - db
+
+
+
